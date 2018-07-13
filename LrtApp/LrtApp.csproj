@@ -55,6 +55,7 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenerateQRActivity.cs" />
     <Compile Include="LocateFragment.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="QRFragment.cs" />
@@ -104,6 +105,9 @@
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.CardView">
       <Version>27.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="ZXing.Net">
+      <Version>0.16.4</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

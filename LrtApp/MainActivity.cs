@@ -11,7 +11,7 @@ namespace LrtApp
     public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
         FragmentTransaction ft;
-
+       
         public bool OnNavigationItemSelected(IMenuItem item)
         {
             switch (item.ItemId)

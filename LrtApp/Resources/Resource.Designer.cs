@@ -2510,8 +2510,11 @@ namespace LrtApp
 			// aapt resource value: 0x7f08008d
 			public const int bottom_navigation = 2131230861;
 			
+			// aapt resource value: 0x7f0800b3
+			public const int btnGenerateQR = 2131230899;
+			
 			// aapt resource value: 0x7f0800b1
-			public const int btnGenerateQR = 2131230897;
+			public const int btnShare = 2131230897;
 			
 			// aapt resource value: 0x7f080063
 			public const int buttonPanel = 2131230819;
@@ -2606,6 +2609,9 @@ namespace LrtApp
 			// aapt resource value: 0x7f080072
 			public const int expanded_menu = 2131230834;
 			
+			// aapt resource value: 0x7f0800b0
+			public const int expiration = 2131230896;
+			
 			// aapt resource value: 0x7f080050
 			public const int fill = 2131230800;
 			
@@ -2672,14 +2678,14 @@ namespace LrtApp
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int masked = 2131230900;
+			// aapt resource value: 0x7f0800b6
+			public const int masked = 2131230902;
 			
 			// aapt resource value: 0x7f0800a2
 			public const int media_actions = 2131230882;
 			
-			// aapt resource value: 0x7f0800b2
-			public const int message = 2131230898;
+			// aapt resource value: 0x7f0800b4
+			public const int message = 2131230900;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2696,14 +2702,14 @@ namespace LrtApp
 			// aapt resource value: 0x7f080096
 			public const int navigation_header_container = 2131230870;
 			
+			// aapt resource value: 0x7f0800b9
+			public const int navigation_locate = 2131230905;
+			
 			// aapt resource value: 0x7f0800b7
-			public const int navigation_locate = 2131230903;
+			public const int navigation_qr = 2131230903;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int navigation_qr = 2131230901;
-			
-			// aapt resource value: 0x7f0800b6
-			public const int navigation_rewards = 2131230902;
+			// aapt resource value: 0x7f0800b8
+			public const int navigation_rewards = 2131230904;
 			
 			// aapt resource value: 0x7f08003b
 			public const int never = 2131230779;
@@ -2927,8 +2933,8 @@ namespace LrtApp
 			// aapt resource value: 0x7f080013
 			public const int transition_transform = 2131230739;
 			
-			// aapt resource value: 0x7f0800b0
-			public const int txtBalance = 2131230896;
+			// aapt resource value: 0x7f0800b2
+			public const int txtBalance = 2131230898;
 			
 			// aapt resource value: 0x7f08002d
 			public const int uniform = 2131230765;
@@ -2942,8 +2948,8 @@ namespace LrtApp
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800b3
-			public const int visible = 2131230899;
+			// aapt resource value: 0x7f0800b5
+			public const int visible = 2131230901;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

@@ -15,6 +15,8 @@ namespace LrtApp
 {
     public class QRFragment : Fragment
     {
+        Button btnGenerate;
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -26,7 +28,16 @@ namespace LrtApp
         {
             var view = inflater.Inflate(Resource.Layout.QRLayout, container, false);
 
+            btnGenerate = view.FindViewById<Button>(Resource.Id.btnGenerateQR);
+            btnGenerate.Click += BtnGenerate_Click;
+
             return view;
+        }
+
+        private void BtnGenerate_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(Activity, typeof(GenerateQRActivity));
+            StartActivity(intent);
         }
     }
 }
