@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace LrtApp
 {
-    public class QRFragment : Fragment
+    public class QRFragment : DialogFragment
     {
         Button btnGenerate;
 
@@ -26,6 +26,8 @@ namespace LrtApp
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
+            base.OnCreateView(inflater, container, savedInstanceState);
+
             var view = inflater.Inflate(Resource.Layout.QRLayout, container, false);
 
             btnGenerate = view.FindViewById<Button>(Resource.Id.btnGenerateQR);

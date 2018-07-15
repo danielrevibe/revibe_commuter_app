@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using LrtApp.Model;
+using Newtonsoft.Json;
 using ZXing;
 using ZXing.Common;
 
@@ -20,7 +22,7 @@ namespace LrtApp
     {
         private ImageView qrImage;
         private Button btnShare;
-        private TextView txtExpiration;
+      
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,7 +30,7 @@ namespace LrtApp
             SetContentView(Resource.Layout.QRCode);
 
             qrImage = FindViewById<ImageView>(Resource.Id.imageQR);
-            txtExpiration = FindViewById<TextView>(Resource.Id.expiration);
+          
             btnShare = FindViewById<Button>(Resource.Id.btnShare);
             btnShare.Click += BtnShare_Click;
 
@@ -49,7 +51,19 @@ namespace LrtApp
                     Width = 600
                 }
             };
-            var bitmap = writer.Write("My content");
+
+
+            //for prototyping purposes, we just declared the subscription id, 
+            //subscription id should come from database.
+            string subscription_id = "12345";
+
+            QRModel qr = new QRModel();
+            qr.subscription_id = subscription_id;
+            qr.datetime = DateTime.Now.ToString();
+
+            var jsonObj = JsonConvert.SerializeObject(qr);
+
+            var bitmap = writer.Write(jsonObj);
             qrImage.SetImageBitmap(bitmap);
         }
 
@@ -57,7 +71,7 @@ namespace LrtApp
 
         private void BtnShare_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

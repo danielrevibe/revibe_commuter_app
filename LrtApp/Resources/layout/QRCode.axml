@@ -9,19 +9,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="false"
         android:layout_centerInParent="true" />
-    <TextView
-        android:id="@+id/expiration"
-        android:text="Expiration"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/imageQR" />
     <Button
         android:id="@+id/btnShare"
         android:text="Share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:layout_below="@id/expiration"
+        android:layout_below="@id/imageQR"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

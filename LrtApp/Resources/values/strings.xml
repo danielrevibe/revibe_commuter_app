@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">LRT</string>
     <string name="title_qr">QR</string>
-    <string name="title_rewards">Rewards</string>
-    <string name="title_locate">Locate</string>
+    <string name="title_rewards">Ads Up</string>
+    <string name="title_locate">Train</string>
+
+  <string name="open_drawer">Open drawer</string>
+  <string name="close_drawer">Close drawer</string>
+
 </resources>
